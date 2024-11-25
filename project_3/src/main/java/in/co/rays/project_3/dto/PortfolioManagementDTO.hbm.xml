@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 23-Nov-2024, 12:41:56 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="in.co.rays.project_3.dto">
+
+<class name="PortfolioManagementDTO" table="st_portfolioManagement">
+		<id name="id" type="java.lang.Long">
+			<column name="ID" />
+			<generator class="increment" />
+		</id>    
+        <property name="portfolioName" type="java.lang.String">
+            <column name="PORTFOLIONAME" />
+        </property>
+        <property name="riskToleranceLevel" type="java.lang.String">
+            <column name="RISKTOLERANCELEVEL" />
+        </property>
+        <property name="initialInvestmentAmount" type="int">
+            <column name="INITIALINVESTMENTAMOUNT" />
+        </property>
+        <property name="investmentStrategy" type="java.lang.String">
+            <column name="INVESTMENTSTRATEGY" />
+        </property>
+    </class>
+</hibernate-mapping>
